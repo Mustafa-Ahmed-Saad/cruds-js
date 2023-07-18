@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="my-5">
+        <label for="product-name" class="form-label">Product Name:</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          id="product-name"
+          placeholder="Name"
+        />
+
+        <label for="product-price" class="form-label">Product Price:</label>
+        <input
+          type="number"
+          class="form-control mb-3"
+          id="product-price"
+          placeholder="Price"
+        />
+
+        <label for="product-category" class="form-label"
+          >Product Category:</label
+        >
+        <input
+          type="text"
+          class="form-control mb-3"
+          id="product-category"
+          placeholder="Category"
+        />
+
+        <label for="product-desc" class="form-label">Product Desc:</label>
+        <textarea
+          type="text"
+          class="form-control mb-3"
+          id="product-desc"
+          placeholder="Desc"
+        ></textarea>
+
+        <button
+          id="submitBtn"
+          type="button"
+          class="btn btn-primary"
+          onclick="checkBtnText()"
+        >
+          Add product
+        </button>
+      </div>
+
+      <div class="m-auto w-50">
+        <input
+          type="search"
+          id="searchInput"
+          class="w-100 form-control mb-3 border border-primary"
+          placeholder="search..."
+          onkeyup="search()"
+        />
+      </div>
+
+      <table class="table text-center my-5">
+        <thead id="tHead">
+          <th>Index</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Category</th>
+          <th>Product Desc</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tBody">
+          <!-- <tr>
+            <td>0</td>
+            <td>Samsung</td>
+            <td>7000</td>
+            <td>Mobile</td>
+            <td>Good</td>
+            <td>
+              <button type="button" class="btn btn-outline-warning">
+                Update
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-outline-danger">
+                Delete
+              </button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
